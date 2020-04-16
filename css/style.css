@@ -1,0 +1,610 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+p{
+    margin: 0 !important;
+}
+.fa.fa-bars {
+    font-size: 30px;
+    color: #fff;
+}
+.fa-arrow-up{
+    position: fixed;
+    top: 500px;
+    right: 20px;
+    height: 30px;
+    width: 30px;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    background: #E31105;
+    border-radius: 50%;
+    
+}
+header{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../image/banner-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 650px;
+}
+
+header .navbar{
+    text-transform: uppercase;
+    padding-top: 22px;
+}
+header .navbar .nav-item{
+    margin: 0 18px;
+    font-weight: 700;
+}
+header .navbar .nav-item:hover{
+    border-bottom: 1px solid #FF0000;
+    transition: 0.5s linear;
+}
+header .navbar .nav-item .nav-link{
+    color: #fff;
+}
+header .navbar .nav-item.active .nav-link{
+    color: #fff;
+    border-bottom: 1px solid #FF0000;
+}
+.banner-text{
+    color: #fff;
+    text-align: center;
+    padding: 0 24%;
+    margin-top: 50px;
+}
+.banner-text h1 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    }
+.banner-text p{
+    margin-bottom: 40px !important;
+}
+.banner-text .btn-cta{
+    padding: 10px 40px;
+    background: #FF544C;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 0;
+    margin: 0px 10px;
+}
+.banner-text .btn-cta:hover{
+    background: #E31105;
+    color: #fff;
+}
+.banner-text .btn-ghost{
+    padding: 10px 40px;
+    border: 2px solid #FF544C;
+    border-radius: 0;
+    margin: 0px 10px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.banner-text .btn-ghost:hover{
+    background: #FF544C;
+    color: #fff;
+}
+/*------Start Service Section--------*/
+.service-section{
+    color: #fff;
+    margin-top: -80px;
+    padding-bottom: 80px;
+    overflow: hidden;
+}
+.service-section .service-box{
+    background: #202B31;
+    padding: 15%;
+    position: relative;
+    z-index: 1;
+}
+.service-section .service-box img{
+    margin-bottom: 20px;
+}
+.service-section .service-box h5{
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.service-section .service-box .white-line{
+    height: 3px;
+    width: 25%;
+    background: #fff;
+    margin-bottom: 30px;
+}
+.service-section .service-box::after {
+    position: absolute;
+    content: "";
+    background: #FF544C;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: scale(0);
+    transition: 0.4s linear;
+    }
+    .service-section .service-box:hover::after {
+        transform: scale(1);
+        }
+/*-----Works Section------*/
+.works{
+    padding: 80px 0;
+}
+.works h6{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #FF5553;
+    margin-bottom: 20px;
+}
+.works h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.works .highlight {
+    color: #FF5553;
+}
+.works p {
+    padding: 0px 24%;
+    text-align: center;
+    color: #838383;
+    margin-bottom: 60px !important;
+}
+.works .work-box {
+    text-align: center;
+}
+.works .work-box img {
+     margin-bottom: 20px;
+ }
+ .works .work-box h3 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.works .work-box p {
+    padding: 0 5%;
+    margin-bottom: 50px !important;
+}
+/*------About Us Section---------*/
+.about {
+    padding: 80px 0;
+    background: #202B31;
+    color: #fff;
+}
+ .about h3 {
+    font-size: 35px;
+    font-weight: 700;
+    padding-right: 10%;
+    margin-bottom: 30px;
+}
+.about p {
+    line-height: 1.7;
+    margin-bottom: 50px !important;
+}
+.about .btn-custom {
+    color: #fff;
+    border: 2px solid #FF544C;
+    padding: 10px 40px;
+    border-radius: 0;
+    position: relative;
+    z-index: 1;
+}
+.about .btn-custom::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FF544C;
+    z-index: -1;
+    transform: scale(0);
+    transform-origin: top left;
+    transition: 0.4s linear;
+}
+.about .btn-custom:hover::after{
+    transform: scale(1);
+    transform-origin: top right;
+}
+/*---------Features Section---------*/
+.features {
+    padding: 80px 0;
+}
+.features h5 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.features p {
+    color: #838383;
+    margin-bottom: 40px !important;
+    line-height: 1.7;
+}
+.features .right-text {
+    padding: 0 5%;
+}
+.features .right-text h3 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.features .right-text p {
+    margin-bottom: 30px !important;
+    color: #838383;
+ }
+ /*--------Branding Section------------*/
+ .branding{
+     padding: 80px 0;
+     background: #202B31;
+ }
+ .branding .right-text {
+    padding: 0 6%;
+    color: #fff;
+}
+.branding .right-text h3 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: right;
+}
+.branding .right-text p {
+    margin-bottom: 30px !important;
+    line-height: 1.7;
+    text-align: right;
+    color: #838383;
+ }
+ .branding .image1 {
+    margin-top: 25px;
+    margin-bottom: 60px;
+}
+.branding .image2 {
+    text-align: right;
+}
+.branding .image3 {
+    text-align: center;
+}
+.branding .image4 {
+    margin-top: 25px;
+}
+/*----------Design Section-------------*/
+.Design{
+    padding-top: 80px;
+    background: #f8f8f8;
+}
+.Design h3 {
+    font-size: 35px;
+    font-weight: 700;
+    padding-right: 15%;
+    margin-bottom: 30px;
+ }
+ .Design p {
+    color: #838383;
+    padding-right: 15%;
+    margin-bottom: 40px !important;
+}
+.Design .box {
+    margin-top: 20px;
+}
+.Design .box img {
+    text-align: left;
+    margin-bottom: 20px;
+}
+.Design .box h5 {
+    margin-bottom: 20px;
+}
+.Design .box p {
+    padding: 0;
+    line-height: 1.7;
+}
+/*----Contact Section------*/
+.contact{
+    padding: 80px 0;
+}
+.contact h3 {
+    font-size: 45px;
+    font-weight: 700;
+    text-align: right;
+    padding-left: 15%;
+    margin-bottom: 30px;
+ }
+ .contact p {
+    margin-bottom: 30px !important;
+    line-height: 1.7;
+    text-align: right;
+    color: #838383;
+}
+.contact form .form-row {
+    margin-bottom: 15px;
+}
+.contact form .form-row .form-control {
+    padding: 7px;
+    border: 1px solid;
+    border-radius: 0;
+}
+.contact form .form-row .btn-submit {
+    background: #FF544C;
+    color: #fff;
+    padding: 10px;
+}
+/*-----Footer Section-----*/
+.footer{
+    background: #202B31;
+    padding: 30px 0;
+}
+.footer p{
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+/*-------RESPONSIVE CSS---------------*/
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .service-section {
+        margin-top: -65px;
+        }
+    .service-section .service-box {
+        padding: 8%;
+        }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .banner-text {
+        margin-top: 40px;
+        padding: 0 15%;
+    }
+    .banner-text h1 {
+        margin-bottom: 20px;
+        font-size: 35px;
+    }
+    .banner-text p {
+        margin-bottom: 25px !important;
+    }
+    .works h2 {
+        font-size: 35px;
+    }
+    .works p {
+        padding: 0px 15%;
+    }
+    .about h3 {
+        font-size: 28px;
+        padding-right: 0;
+        margin-bottom: 15px;
+    }
+    .about {
+        padding: 50px 0;
+    }
+    .about p {
+        margin-bottom: 15px !important;
+    }
+    .about_image {
+         margin-top: 35px;
+    }
+    .features .right-text {
+        padding: 0;
+    }
+    .features .right-text h3 {
+        font-size: 28px;
+    }
+    .features .right-text p {
+        margin-bottom: 15px !important;
+    }
+    .logo-image {
+        margin-bottom: 30px;
+        padding: 0 10%;
+    }
+    .branding .right-text {
+        padding: 0;
+    }
+    .branding .right-text h3 {
+        font-size: 28px;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+    .branding .right-text p {
+        margin-bottom: 15px !important;
+        text-align: left;
+    }
+    .Design h3 {
+        font-size: 28px;
+        padding-right: 0;
+        margin-bottom: 15px;
+    }
+    .contact h3 {
+        font-size: 35px;
+        text-align: left;
+        padding-left: 0;
+    }
+    .contact p {
+        margin-bottom: 15px !important;
+        text-align: left;
+    }
+    .contact form {
+        margin-top: 30px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px){
+    .banner-text {
+        padding: 0px 10%;
+    }
+    .banner-text h1 {
+        font-size: 30px;
+    }
+    .banner-text p {
+        margin-bottom: 15px !important;
+    }
+    .service-section .service-box {
+        margin-bottom: 15px;
+    }
+    .works {
+        padding: 50px 0;
+    }
+    .works h2 {
+        font-size: 30px;
+    }
+    .works p {
+        padding: 0px 5%;
+    }
+    .about h3 {
+        font-size: 22px;
+        padding-right: 8%;
+        margin-bottom: 15px;
+    }
+    .about p {
+        margin-bottom: 15px !important;
+    }
+    .about .btn-custom {
+        margin-bottom: 15px;
+    }
+    .logo-image {
+        margin-bottom: 25px;
+    }
+    .features .right-text h3 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .features .right-text p {
+        margin-bottom: 15px !important;
+    }
+    .branding .right-text {
+        padding: 0;
+    }
+    .branding .right-text h3 {
+        font-size: 22px;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+    .branding .right-text p {
+        margin-bottom: 15px !important;
+        text-align: left;
+    }
+    .Design h3 {
+        font-size: 22px;
+        padding-right: 0%;
+        margin-bottom: 15px;
+    }
+    .Design p {
+        padding-right: 0%;
+        margin-bottom: 15px !important;
+    }
+    .contact h3 {
+        font-size: 30px;
+        text-align: left;
+        padding-left: 0;
+        margin-bottom: 15px;
+    }
+    .contact p {
+        margin-bottom: 15px !important;
+        text-align: left;
+    }
+
+}
+@media (min-width: 320px) and (max-width: 575px){
+    .banner-text {
+        padding: 0 30px;
+    }
+    .banner-text h1 {
+        font-size: 25px;
+    }
+    .banner-text p {
+        margin-bottom: 10px !important;
+    }
+    .banner-text .btn-ghost {
+        margin-top: 20px;
+        }
+    .service-section .service-box {
+        margin-bottom: 10px;
+    }
+    .works {
+        padding: 30px 0;
+    }
+    .works h2 {
+        font-size: 23px;
+    }
+    .works p {
+        padding: 0;
+    }
+    .works .work-box h3 {
+        font-size: 18px;
+    }
+    .about h3 {
+        font-size: 20px;
+        padding-right: 0;
+        margin-bottom: 10px;
+    }
+    .about p {
+        margin-bottom: 10px !important;
+    }
+    .about .btn-custom {
+        margin-bottom: 10px;
+    }
+    .logo-image {
+        margin-bottom: 20px;
+    }
+    .features .right-text h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .features .right-text p {
+        margin-bottom: 10px !important;
+    }
+    .features h5 {
+        font-size: 16px;
+    }
+    .branding .right-text {
+        padding: 0;
+    }
+    .branding .right-text h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    .branding .right-text p {
+        margin-bottom: 10px !important;
+        text-align: left;
+    }
+    .Design h3 {
+        font-size: 20px;
+        padding-right: 0;
+        margin-bottom: 10px;
+    }
+    .Design p {
+        padding-right: 0;
+        margin-bottom: 10px !important;
+    }
+    .Design .box {
+        text-align: center;
+    }
+    .contact h3 {
+        font-size: 20px;
+        text-align: left;
+        padding-left: 0;
+        margin-bottom: 10px;
+    }
+    .contact p {
+        margin-bottom: 10px !important;
+        text-align: left;
+    }
+    .logo-image {
+        padding-left: 20%;
+    }
+    .branding .image2 {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .form-control.company {
+        margin-bottom: 10px;
+    }
+
+}
